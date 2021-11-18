@@ -1,11 +1,22 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
+body {
+	line-height: 1;
+	font-family: $font;
 	font-size: 16px;
+	color: $text-color;
+	background: $grey-color;
 }
 
-body {}
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+button {
+	font-family: $font;
+}
