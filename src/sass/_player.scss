@@ -47,6 +47,13 @@
 				height: calc(568px * $ratio);
 				background: $grey-color;
 				z-index: 1;
+				overflow: hidden;
+
+				& img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+				}
 
 				& .volume-button {
 					bottom: 20px;
@@ -68,6 +75,13 @@
 				width: calc(1164px * $ratio);
 				height: calc(418px * $ratio);
 				background: $primary-color;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+				}
 			}
 		}
 	}

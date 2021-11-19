@@ -359,6 +359,12 @@ button {
   height: 639px;
   background: #777777;
   z-index: 1;
+  overflow: hidden;
+}
+.player-video-container .video-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .player-video-container .video-frame .volume-button {
   bottom: 20px;
@@ -378,6 +384,12 @@ button {
   width: 1309.5px;
   height: 470.25px;
   background: #FFC122;
+  overflow: hidden;
+}
+.player-video-container .video-background img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .footer {
