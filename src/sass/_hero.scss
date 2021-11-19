@@ -8,11 +8,65 @@
 		overflow: hidden;
 		z-index: -10;
 
+		& img {
+			object-fit: cover;
+		}
+
 		&-overlay {
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 			position: absolute;
 			width: 100%;
 			height: 50%;
+		}
+
+	}
+
+	&-footer {
+		position: absolute;
+		left: 0;
+		bottom: 5%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-button {
+			background: none;
+			border: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			& p {
+				margin-bottom: 8px;
+				font-size: 16px;
+				font-weight: 400;
+				color: $text-color;
+				line-height: calc(15 / 12);
+			}
+		}
+	}
+
+	&-content {
+		height: 690px;
+		display: flex;
+		align-items: center;
+
+		& .heading {
+			line-height: calc(76.86 / 60);
+			font-weight: bold;
+			font-style: normal;
+			font-size: 60px;
+			color: $primary-color;
+			width: 690px;
+		}
+
+		& .description {
+			margin-top: 10px;
+			line-height: calc(30 / 24);
+			font-weight: 500;
+			font-size: 24px;
+			width: 690px;
 		}
 	}
 }

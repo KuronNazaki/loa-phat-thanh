@@ -7,23 +7,25 @@ function NavBar() {
 
 	return (
 		<>
-			<header className="navbar">
-				<div className="container">
-					<div className="navbar-container">
-						<img
-							srcSet={scaledLogo}
-							className="navbar-logo"
-							alt="Navigation Bar Logo"
-						></img>
-						<div className="navbar-list">
-							<Menu />
-							<div className="navbar-auth">
-								<button className="sign-in">Tham gia</button>
+			<div className="navbar">
+				<div className="wrapper">
+					<div className="container">
+						<div className="navbar-container">
+							<img
+								srcSet={scaledLogo}
+								className="navbar-logo"
+								alt="Navigation Bar Logo"
+							></img>
+							<div className="navbar-list">
+								<Menu />
+								<div className="navbar-auth">
+									<button className="sign-in">Tham gia</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</header>
+			</div>
 		</>
 	);
 }

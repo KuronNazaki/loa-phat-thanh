@@ -27,11 +27,12 @@
 }
 
 .menu {
-	margin-right: 24px;
+	margin-right: 48px;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 0 48px;
 
 	&-button {
 		cursor: pointer;
@@ -40,9 +41,5 @@
 		font-size: 20px;
 		font-weight: 700;
 		color: $text-color;
-	}
-
-	&-item {
-		padding: 0 24px;
 	}
 }
