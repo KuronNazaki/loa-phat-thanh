@@ -183,7 +183,6 @@ body {
   font-family: "BiofolioUltimate";
   font-size: 16px;
   color: #FFFFFF;
-  background: #777777;
 }
 
 .wrapper {
@@ -324,7 +323,7 @@ button {
 }
 .player-header {
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,6 +338,46 @@ button {
   color: #FFC122;
   font-size: 25px;
   font-weight: 500;
+}
+.player-video {
+  position: relative;
+  width: 100%;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.player-video-container {
+  height: 639px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-video-container .video-frame {
+  position: absolute;
+  border-radius: 20px;
+  width: 1134px;
+  height: 639px;
+  background: #777777;
+  z-index: 1;
+}
+.player-video-container .video-frame .volume-button {
+  bottom: 20px;
+  right: 20px;
+  padding: 23.5px 18px 17px;
+  z-index: 10;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #FFC122;
+  border: none;
+  border-radius: 100%;
+}
+.player-video-container .video-background {
+  position: absolute;
+  border-radius: 20px;
+  width: 1309.5px;
+  height: 470.25px;
+  background: #FFC122;
 }
 
 /*# sourceMappingURL=index.css.map */

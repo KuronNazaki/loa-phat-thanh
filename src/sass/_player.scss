@@ -6,7 +6,7 @@
 
 	&-header {
 		margin: 0 auto;
-		padding-top: 50px;
+		padding-top: 75px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -24,4 +24,53 @@
 			font-weight: 500;
 		}
 	}
+
+	&-video {
+		position: relative;
+		width: 100%;
+		padding-top: 70px;
+		display: flex;
+		justify-content: center;
+
+		&-container {
+			$ratio: 1.125;
+			// width: calc(1164px * $ratio);
+			height: calc(568px * $ratio);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.video-frame {
+				position: absolute;
+				border-radius: 20px;
+				width: calc(1008px * $ratio);
+				height: calc(568px * $ratio);
+				background: $grey-color;
+				z-index: 1;
+
+				& .volume-button {
+					bottom: 20px;
+					right: 20px;
+					padding: 23.5px 18px 17px;
+					z-index: 10;
+					position: absolute;
+					width: 80px;
+					height: 80px;
+					background: $primary-color;
+					border: none;
+					border-radius: 100%;
+				}
+			}
+
+			.video-background {
+				position: absolute;
+				border-radius: 20px;
+				width: calc(1164px * $ratio);
+				height: calc(418px * $ratio);
+				background: $primary-color;
+			}
+		}
+	}
+
+
 }
