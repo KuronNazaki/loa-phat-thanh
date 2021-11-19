@@ -1,9 +1,9 @@
 import React from 'react';
-import background from '../images/hero-background.jpg';
 import scrollDownIcon from '../images/scroll-down-button.png';
 
 function Hero() {
 	let scaledScrollDownIcon = scrollDownIcon + ' 2x';
+
 	return (
 		<div className="hero">
 			<div className="wrapper">
@@ -23,10 +23,6 @@ function Hero() {
 							<img srcSet={scaledScrollDownIcon} alt="Scrolldown Icon" />
 						</button>
 					</div>
-				</div>
-				<div className="hero-background">
-					<div className="hero-background-overlay"></div>
-					<img src={background} alt="Hero Background" />
 				</div>
 			</div>
 		</div>
