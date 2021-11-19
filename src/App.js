@@ -2,6 +2,7 @@ import Hero from './components/Hero.js';
 import NavBar from './components/NavBar.js';
 import Player from './components/Player.js';
 import Slider from './components/Slider.js';
+import Footer from './components/Footer.js';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Slider />
 			<Hero />
 			<Player />
+			<Footer />
 		</>
 	);
 }
