@@ -21,13 +21,37 @@
 
 	&-auth {
 		&>.sign-in {
-			background: none;
+			position: relative;
+			overflow: hidden;
+			background: transparent;
 			border: 0.1667em solid $primary-color;
 			border-radius: 20px;
 			color: $primary-color;
 			font-weight: 700;
 			font-size: 18px;
 			padding: 15px 20px;
+
+			&::before {
+				position: absolute;
+				content: "";
+				display: inline-block;
+				text-align: center;
+				background-color: $primary-color-hovering;
+				width: 200px;
+				height: 200px;
+				z-index: -1;
+				border-radius: 100rem;
+				top: 50%;
+				left: 50%;
+				margin-left: -100px;
+				margin-top: -100px;
+				transform: scale(0);
+				transition: transform 0.5s ease-out;
+			}
+
+			&:hover::before {
+				transform: scale(1);
+			}
 		}
 	}
 }
@@ -41,11 +65,31 @@
 	gap: 0 48px;
 
 	&-button {
+		position: relative;
 		cursor: pointer;
 		background: none;
 		border: none;
 		font-size: 18px;
 		font-weight: 700;
 		color: $text-color;
+
+		&::before {
+			position: absolute;
+			content: "";
+			display: block;
+			background-color: $text-color;
+			width: 100%;
+			height: 0.125rem;
+			z-index: -1;
+			border-radius: inherit;
+			bottom: -0.625rem;
+			left: 0;
+			transform: scaleX(0);
+			transition: transform 0.3s ease-out;
+		}
+
+		&:hover::before {
+			transform: scaleX(1);
+		}
 	}
 }
