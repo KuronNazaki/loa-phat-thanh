@@ -1,5 +1,6 @@
 import React from 'react';
-import background from '../images/hero-background.jpg';
+import background from '../asset/images/hero-background.jpg';
+import './Slider.scss';
 
 function Slider() {
 	return (

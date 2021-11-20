@@ -1,3 +1,5 @@
+@import "../sass/variables";
+
 .player {
 	position: relative;
 	width: 100%;
@@ -33,9 +35,9 @@
 		justify-content: center;
 
 		&-container {
-			$ratio: 1.125;
+			// $ratio: 1.125;
 			// width: calc(1164px * $ratio);
-			height: calc(568px * $ratio);
+			height: calc(568px * 1.125);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -43,8 +45,8 @@
 			.video-frame {
 				position: absolute;
 				border-radius: 20px;
-				width: calc(1008px * $ratio);
-				height: calc(568px * $ratio);
+				width: calc(1008px * 1.125);
+				height: calc(568px * 1.125);
 				background: $grey-color;
 				z-index: 1;
 				overflow: hidden;
@@ -72,8 +74,8 @@
 			.video-background {
 				position: absolute;
 				border-radius: 20px;
-				width: calc(1164px * $ratio);
-				height: calc(418px * $ratio);
+				width: calc(1164px * 1.125);
+				height: calc(418px * 1.125);
 				background: $primary-color;
 				overflow: hidden;
 
@@ -85,6 +87,4 @@
 			}
 		}
 	}
-
-
 }

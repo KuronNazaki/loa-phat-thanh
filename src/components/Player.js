@@ -1,7 +1,8 @@
 import React from 'react';
-import muteVolume from '../images/volume-mute.png';
-import videoImage from '../images/smithereen.png';
-import videoBackground from '../images/hero-background.jpg';
+import muteVolume from '../asset/images/volume-mute.png';
+import videoImage from '../asset/images/smithereen.png';
+import videoBackground from '../asset/images/hero-background.jpg';
+import './Player.scss';
 
 function Player() {
 	let scaledMuteVolume = muteVolume + ' 2x';

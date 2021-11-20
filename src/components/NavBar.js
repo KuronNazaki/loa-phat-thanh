@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { debounce } from '../utilities/helpers.js';
-import logo from '../images/navbar-logo.png';
+import logo from '../asset/images/navbar-logo.png';
 import Menu from './Menu.js';
+import './Navbar.scss';
 
 function NavBar() {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);

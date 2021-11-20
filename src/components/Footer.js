@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../images/navbar-logo.png';
-import backButton from '../images/back-button.png';
+import logo from '../asset/images/navbar-logo.png';
+import backButton from '../asset/images/back-button.png';
+import './Footer.scss';
 
 function Footer() {
 	let scaledLogo = logo + ' 2x';
@@ -18,39 +19,39 @@ function Footer() {
 							<div className="footer-menu">
 								<ul className="menu">
 									<h3 className="menu-heading">Liên hệ</h3>
-									<il className="menu-item">
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											Facebook
 										</a>
-									</il>
-									<il className="menu-item">
+									</li>
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											Instagram
 										</a>
-									</il>
-									<il className="menu-item">
+									</li>
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											GitHub
 										</a>
-									</il>
+									</li>
 								</ul>
 								<ul className="menu">
 									<h3 className="menu-heading">Về chúng tôi</h3>
-									<il className="menu-item">
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											Facebook
 										</a>
-									</il>
-									<il className="menu-item">
+									</li>
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											Instagram
 										</a>
-									</il>
-									<il className="menu-item">
+									</li>
+									<li className="menu-item">
 										<a className="menu-link" href="#">
 											GitHub
 										</a>
-									</il>
+									</li>
 								</ul>
 							</div>
 						</div>

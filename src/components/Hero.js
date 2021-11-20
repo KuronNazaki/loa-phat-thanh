@@ -1,5 +1,6 @@
 import React from 'react';
-import scrollDownIcon from '../images/scroll-down-button.png';
+import scrollDownIcon from '../asset/images/scroll-down-button.png';
+import './Hero.scss';
 
 function Hero() {
 	let scaledScrollDownIcon = scrollDownIcon + ' 2x';
