@@ -178,10 +178,13 @@ img {
   font-style: italic;
   font-display: swap;
 }
+html {
+  font-size: 16px;
+}
+
 body {
   line-height: 1;
   font-family: "BiofolioUltimate";
-  font-size: 16px;
   color: #FFFFFF;
 }
 
@@ -203,9 +206,9 @@ button {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 30px 0;
+  padding: 1.875em 0;
   z-index: 10;
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in;
 }
 .navbar-container {
   display: flex;
@@ -219,11 +222,11 @@ button {
 }
 .navbar-auth > .sign-in {
   background: none;
-  border: 3px solid #FFC122;
+  border: 0.1667em solid #FFC122;
   border-radius: 20px;
   color: #FFC122;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 20px;
 }
 
@@ -239,7 +242,7 @@ button {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #FFFFFF;
 }
