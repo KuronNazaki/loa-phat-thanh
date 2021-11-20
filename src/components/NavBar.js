@@ -9,7 +9,7 @@ function NavBar() {
 	let scaledLogo = logo + ' 2x';
 	const navBarOnScroll = {
 		background: 'black',
-		'box-shadow': `0.1px 3.9px 3.6px rgba(0, 0, 0, 0.022),
+		boxShadow: `0.1px 3.9px 3.6px rgba(0, 0, 0, 0.022),
   	0.3px 9.9px 9.1px rgba(0, 0, 0, 0.031),
   	0.7px 20.2px 18.6px rgba(0, 0, 0, 0.039),
   	1.5px 41.6px 38.3px rgba(0, 0, 0, 0.048),
