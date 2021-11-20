@@ -5,15 +5,15 @@ import Slider from './components/Slider.js';
 import Footer from './components/Footer.js';
 
 function App() {
-	return (
-		<>
-			<NavBar />
-			<Slider />
-			<Hero />
-			<Player />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <NavBar />
+      <Slider />
+      <Hero />
+      <Player />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
