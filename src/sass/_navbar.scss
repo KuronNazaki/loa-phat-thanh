@@ -1,9 +1,9 @@
 .navbar {
 	position: fixed;
 	width: 100%;
-	padding: 1.875em 0;
+	padding: 30px 0;
 	z-index: 10;
-	transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in;
+	transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
 	&-container {
 		display: flex;
@@ -20,11 +20,11 @@
 	&-auth {
 		&>.sign-in {
 			background: none;
-			border: 0.1667em solid $primary-color;
+			border: 3px solid $primary-color;
 			border-radius: 20px;
 			color: $primary-color;
 			font-weight: 700;
-			font-size: 18px;
+			font-size: 20px;
 			padding: 15px 20px;
 		}
 	}
@@ -42,7 +42,7 @@
 		cursor: pointer;
 		background: none;
 		border: none;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 700;
 		color: $text-color;
 	}
