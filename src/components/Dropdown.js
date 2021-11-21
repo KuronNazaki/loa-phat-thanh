@@ -18,14 +18,14 @@ const playlist = [
   },
   {
     thumbnail:
-      'https://i.ytimg.com/an_webp/T_lC2O1oIew/mqdefault_6s.webp?du=3000&sqp=CPy65owG&rs=AOn4CLD2tY8n7A_7Ej5XLsFkTjhBZ8fQxA',
+      'https://i.ytimg.com/vi/DQcrFQDUb_s/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAN3Y34r0qWItAtY42pZdG0yYYGow',
     title: '竹内まりや - Plastic Love (Official Music Video)',
     duration: '5:09',
     author: 'Warner Bros Musix',
   },
   {
     thumbnail:
-      'https://i.ytimg.com/an_webp/rulE5MJICLo/mqdefault_6s.webp?du=3000&sqp=CMDM5owG&rs=AOn4CLBVqH-w7xPA3nFW8G4l3W1UWVDDNA',
+      'https://i.ytimg.com/vi/DQcrFQDUb_s/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAN3Y34r0qWItAtY42pZdG0yYYGow',
     title:
       "Old songs but it's lofi 📻 vintage, jazzhop | lofi study chill mix | 1980s Music",
     duration: '1:09:49',
@@ -55,14 +55,14 @@ const playlist = [
   },
   {
     thumbnail:
-      'https://i.ytimg.com/an_webp/T_lC2O1oIew/mqdefault_6s.webp?du=3000&sqp=CPy65owG&rs=AOn4CLD2tY8n7A_7Ej5XLsFkTjhBZ8fQxA',
+      'https://i.ytimg.com/vi/DQcrFQDUb_s/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAN3Y34r0qWItAtY42pZdG0yYYGow',
     title: '竹内まりや - Plastic Love (Official Music Video)',
     duration: '5:09',
     author: 'Warner Bros Musix',
   },
   {
     thumbnail:
-      'https://i.ytimg.com/an_webp/rulE5MJICLo/mqdefault_6s.webp?du=3000&sqp=CMDM5owG&rs=AOn4CLBVqH-w7xPA3nFW8G4l3W1UWVDDNA',
+      'https://i.ytimg.com/vi/DQcrFQDUb_s/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAN3Y34r0qWItAtY42pZdG0yYYGow',
     title:
       "Old songs but it's lofi 📻 vintage, jazzhop | lofi study chill mix | 1980s Music",
     duration: '1:09:49',
