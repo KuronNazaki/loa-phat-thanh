@@ -87,8 +87,8 @@ function Dropdown(props) {
   return (
     <div className="dropdown" style={props.isVisible ? isVisibleStyle : {}}>
       <div className="dropdown-items">
-        {playlist.map((element) => (
-          <div className="dropdown-item">
+        {playlist.map((element, index) => (
+          <div className="dropdown-item" key={index}>
             <div className="dropdown-item__thumbnail">
               <img src={element.thumbnail} alt="Youtube Thumbnail" />
               <p className="dropdown-item-desc__duration">{element.duration}</p>

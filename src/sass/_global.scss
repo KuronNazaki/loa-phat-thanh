@@ -23,3 +23,11 @@ body {
 button {
 	font-family: $font;
 }
+
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden
+}
