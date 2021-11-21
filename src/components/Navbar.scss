@@ -1,0 +1,58 @@
+@import "../sass/variables";
+$button-hovering-size: 300px;
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	padding: 1.875em 0;
+	z-index: 10;
+	transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in;
+
+	&-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-auth {
+		&>.sign-in {
+			position: relative;
+			overflow: hidden;
+			background: transparent;
+			border: 0.1667em solid $primary-color;
+			border-radius: calc((20 / 16) * 1rem);
+			color: $primary-color;
+			font-weight: 700;
+			font-size: 18px;
+			padding: 15px 20px;
+
+			&::before {
+				position: absolute;
+				content: "";
+				display: inline-block;
+				text-align: center;
+				background-color: $primary-color-hovering;
+				width: $button-hovering-size;
+				height: $button-hovering-size;
+				z-index: -1;
+				border-radius: 100rem;
+				top: 50%;
+				left: 50%;
+				margin-left: -$button-hovering-size / 2;
+				margin-top: -$button-hovering-size / 2;
+				transform: scale(0);
+				transition: transform 0.4s ease-out;
+			}
+
+			&:hover::before {
+				transform: scale(1);
+			}
+		}
+	}
+}

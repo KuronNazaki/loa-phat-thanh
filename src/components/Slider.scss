@@ -1,3 +1,6 @@
+@import "../sass/variables";
+
+
 .slider {
 	position: absolute;
 	top: 0;
@@ -15,7 +18,16 @@
 		overflow: hidden;
 
 		& img {
-			object-fit: cover;
+			width: 100%;
+			height: auto;
+			object-fit: none;
+		}
+
+		@media screen and (max-width: 1640px) {
+			& img {
+				height: 100%;
+				max-width: auto;
+			}
 		}
 
 		&-overlay {
