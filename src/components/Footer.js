@@ -6,6 +6,10 @@ import './Footer.scss';
 function Footer() {
   let scaledLogo = logo + ' 2x';
   let scaledBackButton = backButton + ' 2x';
+  const scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
 
   return (
     <div className="footer">
@@ -58,7 +62,7 @@ function Footer() {
             <div className="footer-credit">
               <p>Designed by @kr.nzk. Powdered by @nvtho</p>
             </div>
-            <button className="footer-back-button">
+            <button className="footer-back-button" onClick={scrollToTop}>
               <img srcSet={scaledBackButton} alt="Back Button" />
             </button>
           </div>
