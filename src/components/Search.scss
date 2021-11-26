@@ -1,0 +1,111 @@
+@import '../sass/variables';
+
+.search-container {
+	opacity: 0;
+	visibility: hidden;
+
+	position: absolute;
+	height: 40rem;
+	width: calc(500px + 2rem);
+	top: 5rem;
+	padding: 2rem;
+	z-index: -1;
+	transform: translateX(-40%);
+	border-radius: 20px;
+
+	backdrop-filter: blur(14px) saturate(167%);
+	-webkit-backdrop-filter: blur(14px) saturate(167%);
+	background-color: rgba(17, 25, 40, 0.54);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	display: flex;
+	flex-direction: column;
+
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+	.search-box {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 2rem;
+		margin-bottom: 2rem;
+
+		&__text {
+			padding: 15px;
+			font-family: $font;
+			font-size: 16px;
+			border-radius: 10px;
+			border: 2px solid white;
+			background: none;
+			color: white;
+			flex-grow: 1;
+		}
+
+		&__submit {
+			padding: 15px;
+			font-family: $font;
+			font-size: 16px;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	& .search-list {
+		height: 100%;
+		overflow-y: scroll;
+		display: flex;
+		flex-direction: column;
+		gap: 20px 0;
+
+		//Hide scrollbar
+		-ms-overflow-style: none;
+		/* Internet Explorer 10+ */
+		scrollbar-width: none;
+
+		/* Firefox */
+		&::-webkit-scrollbar {
+			display: none;
+			/* Safari and Chrome */
+		}
+
+		& .search-item {
+			display: flex;
+			gap: 0 10px;
+			background: none;
+			border: none;
+			border-radius: 10px;
+			padding: 15px;
+			transition: background 0.2s ease-in-out;
+
+			&:hover {
+				background: rgba(17, 25, 40, 0.3);
+			}
+
+			&-thumbnail {
+				position: relative;
+				width: 40%;
+				overflow: hidden;
+				border-radius: 10px;
+				flex-shrink: 0;
+
+				&__duration {
+					position: absolute;
+					bottom: 8px;
+					right: 8px;
+					background: none;
+					color: white;
+				}
+			}
+
+			&-desc {
+				text-align: left;
+				display: flex;
+				gap: 10px 0;
+				flex-direction: column;
+				color: white;
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import './Dropdown.scss';
+import React from 'react';
+import './Search.scss';
 
-const playlist = [
+const searchList = [
   {
     thumbnail:
       'https://i.ytimg.com/vi/_tOAturTz-o/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAYUO551V7098dKvos8IdI1jHWfBw',
@@ -78,34 +78,47 @@ const playlist = [
   },
 ];
 
-function Dropdown(props) {
-  const isVisibleStyle = {
-    opacity: '1',
-    visibility: 'visible',
-  };
-
-  useEffect(() => {
-    console.log('In Dropdown', props.isVisible);
-  }, [props.isVisible]);
-
+function Search(props) {
   return (
-    <div className="dropdown" style={props.isVisible ? isVisibleStyle : {}}>
-      <div className="dropdown-items">
-        {playlist.map((element, index) => (
-          <div className="dropdown-item" key={index}>
-            <div className="dropdown-item__thumbnail">
-              <img src={element.thumbnail} alt="Youtube Thumbnail" />
-              <p className="dropdown-item-desc__duration">{element.duration}</p>
-            </div>
-            <div className="dropdown-item-desc">
-              <h3 className="dropdown-item-desc__title">{element.title}</h3>
-              <p className="dropdown-item-desc__author">{element.author}</p>
-            </div>
-          </div>
-        ))}
+    <div
+      className="search-container"
+      style={props.isVisible ? { opacity: 1, visibility: 'visible' } : {}}
+    >
+      <form action="" className="search-box">
+        <input
+          type="text"
+          name="searchString"
+          className="search-box__text"
+          id="searchInputText"
+          placeholder="Nhập vào đây"
+        />
+        <input
+          id="searchInputSubmit"
+          className="search-box__submit"
+          type="submit"
+          value="Tìm kiếm"
+        />
+      </form>
+      <div className="search-list">
+        {searchList.map((element, index) => {
+          return (
+            <button className="search-item" key={index}>
+              <div className="search-item-thumbnail">
+                <img src={element.thumbnail} alt={`Thumbnail ${index}`} />
+                <p className="search-item-thumbnail__duration">
+                  {element.duration}
+                </p>
+              </div>
+              <div className="search-item-desc">
+                <h3 className="search-item-desc__title">{element.title}</h3>
+                <p className="search-item-desc__author">{element.author}</p>
+              </div>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
 }
 
-export default Dropdown;
+export default Search;

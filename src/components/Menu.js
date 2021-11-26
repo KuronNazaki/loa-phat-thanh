@@ -1,36 +1,53 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import './Menu.scss';
+import OutsideClickHandler from './OutsideClickHandle';
+import Search from './Search';
 
 function Menu() {
-  // const [isDropdownOpened, setIsDropdownOpened] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [isSearchClicked, setIsSearchClicked] = useState(false);
 
-  const onClick = () => {
-    // setIsDropdownOpened(!isDropdownOpened);
-    setIsClicked(!isClicked);
+  const onMenuClick = () => {
+    setIsMenuClicked(!isMenuClicked);
   };
 
-  const onBlur = () => {
-    // setIsDropdownOpened(!isDropdownOpened);
-    setIsClicked(false);
+  const onMenuOutsideClick = (event) => {
+    setIsMenuClicked(false);
+  };
+
+  const onSearchClick = () => {
+    setIsSearchClicked(!isSearchClicked);
+  };
+
+  const onSearchOutsideClick = () => {
+    setIsSearchClicked(false);
   };
 
   return (
     <ul className="menu">
-      <li className="menu-item">
-        <button
-          className={`menu-button ${isClicked ? 'active' : ''}`}
-          onClick={onClick}
-          onBlur={onBlur}
-        >
-          Playlist
-        </button>
-        <Dropdown isVisible={isClicked} />
-      </li>
-      <li className="menu-item">
-        <button className="menu-button">Tìm kiếm</button>
-      </li>
+      <OutsideClickHandler onOutsideClick={onMenuOutsideClick}>
+        <li className="menu-item">
+          <button
+            className={`menu-button ${isMenuClicked ? 'active' : ''}`}
+            onClick={onMenuClick}
+          >
+            Playlist
+          </button>
+          <Dropdown isVisible={isMenuClicked} />
+        </li>
+      </OutsideClickHandler>
+      <OutsideClickHandler onOutsideClick={onSearchOutsideClick}>
+        <li className="menu-item">
+          <button
+            className={`menu-button ${isSearchClicked ? 'active' : ''}`}
+            onClick={onSearchClick}
+          >
+            Tìm kiếm
+          </button>
+          <Search isVisible={isSearchClicked} />
+        </li>
+      </OutsideClickHandler>
     </ul>
   );
 }

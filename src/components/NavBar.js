@@ -5,7 +5,7 @@ import Menu from './Menu.js';
 import './Navbar.scss';
 
 function NavBar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [prevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   let scaledLogo = logo + ' 2x';
   const navBarOnScroll = {

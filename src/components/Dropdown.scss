@@ -28,16 +28,27 @@
 		flex-direction: column;
 		gap: 20px 0;
 
+		//Hide scrollbar
+		-ms-overflow-style: none;
+		/* Internet Explorer 10+ */
+		scrollbar-width: none;
+
+		/* Firefox */
 		&::-webkit-scrollbar {
-			width: 5px;
-			border-radius: 100rem;
-			background-color: rgba(245, 245, 245, 0.2);
+			display: none;
+			/* Safari and Chrome */
 		}
 
-		&::-webkit-scrollbar-thumb {
-			border-radius: 100rem;
-			background-color: $primary-color;
-		}
+		// &::-webkit-scrollbar {
+		// 	width: 5px;
+		// 	border-radius: 100rem;
+		// 	background-color: rgba(245, 245, 245, 0.2);
+		// }
+
+		// &::-webkit-scrollbar-thumb {
+		// 	border-radius: 100rem;
+		// 	background-color: $primary-color;
+		// }
 	}
 
 	&-item {
