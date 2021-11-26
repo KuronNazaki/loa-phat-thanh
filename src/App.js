@@ -8,6 +8,15 @@ import Loading from './components/Loading.js';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const hiddenStyle = {
+    visibility: 'hidden',
+    opacity: 0,
+  };
+  const visibleStyle = {
+    visibility: 'visible',
+    opacity: 1,
+  };
+
   useEffect(() => {
     document.fonts.ready.then(() => {
       setIsLoaded(true);
@@ -16,11 +25,16 @@ function App() {
 
   return (
     <>
-      <div className={`loading-container ${isLoaded ? 'hidden' : 'visible'}`}>
+      {/* <div className={`loading-container ${isLoaded ? 'hidden' : 'visible'}`}> */}
+      <div
+        className="loading-container"
+        style={isLoaded ? hiddenStyle : visibleStyle}
+      >
         <Loading />
       </div>
 
-      <div className={`main ${isLoaded ? 'visible' : 'hidden'}`}>
+      {/* <div className={`main ${isLoaded ? 'visible' : 'hidden'}`}> */}
+      <div className="main" style={!isLoaded ? hiddenStyle : visibleStyle}>
         <NavBar />
         <Slider />
         <Hero />
