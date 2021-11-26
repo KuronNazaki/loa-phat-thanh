@@ -60,7 +60,7 @@ function Footer() {
               </div>
             </div>
             <div className="footer-credit">
-              <p>Designed by @kr.nzk. Powdered by @nvtho</p>
+              <p>Designed by @kr.nzk. Powered by @nvtho</p>
             </div>
             <button className="footer-back-button" onClick={scrollToTop}>
               <img srcSet={scaledBackButton} alt="Back Button" />

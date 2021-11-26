@@ -4,6 +4,9 @@ import './Hero.scss';
 
 function Hero() {
   let scaledScrollDownIcon = scrollDownIcon + ' 2x';
+  const scrollToPlayer = () => {
+    document.getElementById('anchor').scrollIntoView();
+  };
 
   return (
     <div className="hero">
@@ -18,8 +21,8 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="hero-footer">
-            <button className="hero-footer-button">
+          <div className="hero-footer" id="anchor">
+            <button className="hero-footer-button" onClick={scrollToPlayer}>
               <p>Kéo xuống để bắt đầu</p>
               <img srcSet={scaledScrollDownIcon} alt="Scrolldown Icon" />
             </button>
